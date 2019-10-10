@@ -11,8 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="AsycTask"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Death to AsycTask with rx"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -21,7 +20,7 @@
         android:id="@+id/timer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Timer"
+        android:text="Timer with Rx"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/async" />
@@ -30,7 +29,7 @@
         android:id="@+id/retrofit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Retrofit"
+        android:text="Retrofit with Rx"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/timer" />
