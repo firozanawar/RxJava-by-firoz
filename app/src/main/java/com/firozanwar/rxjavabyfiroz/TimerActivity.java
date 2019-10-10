@@ -1,6 +1,7 @@
 package com.firozanwar.rxjavabyfiroz;
 
 import android.os.Bundle;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,12 +15,14 @@ import rx.functions.Action1;
 import rx.schedulers.Schedulers;
 
 public class TimerActivity extends AppCompatActivity {
-    Subscription subscription;
+    private Subscription subscription;
+    private TextView timer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timer);
+        timer = findViewById(R.id.timer);
         startTimerTask();
     }
 
@@ -30,7 +33,7 @@ public class TimerActivity extends AppCompatActivity {
                 .subscribe(new Action1<Long>() {
                     @Override
                     public void call(Long aLong) {
-                        Toast.makeText(TimerActivity.this, "aLong : " + aLong, Toast.LENGTH_SHORT).show();
+                        timer.setText("Timer Called : " + aLong);
                     }
                 });
     }
