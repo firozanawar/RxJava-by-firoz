@@ -11,15 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RetrofitWithRxActivity1">
+        <activity android:name=".view.main.SplashActivity"></activity>
+        <activity android:name=".base.BaseActivity" />
+        <activity android:name=".AsyncToRxActivity1" />
+        <activity android:name=".TimerActivity" />
+        <activity android:name=".RetrofitWithRxActivity1" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".AsyncToRxActivity1">
-
         </activity>
     </application>
 
