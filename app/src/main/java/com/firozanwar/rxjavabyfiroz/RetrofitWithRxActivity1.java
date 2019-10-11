@@ -9,7 +9,7 @@ import android.os.Bundle;
 
 import rx.Scheduler;
 import rx.Subscription;
-import rx.android.schedulers.AndroidSchedulers;
+//import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
 public class RetrofitWithRxActivity1 extends AppCompatActivity {
@@ -45,7 +45,7 @@ public class RetrofitWithRxActivity1 extends AppCompatActivity {
         //get all posts
         subscription = api.getPosts()
                 .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
+//                .observeOn(AndroidSchedulers.mainThread())
                 .doOnSubscribe(() -> progress.show())
                 .doOnCompleted(() -> progress.dismiss())
                 .subscribe(posts ->{
