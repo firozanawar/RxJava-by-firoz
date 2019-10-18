@@ -6,6 +6,8 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.firozanwar.rxjavabyfiroz.ravitamada.OperatorsActivity;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
@@ -15,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.async).setOnClickListener(this::onClick);
         findViewById(R.id.timer).setOnClickListener(this::onClick);
         findViewById(R.id.retrofit).setOnClickListener(this::onClick);
+        findViewById(R.id.rxOpearotrs).setOnClickListener(this::onClick);
     }
 
     @Override
@@ -27,6 +30,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         } else if (view.getId() == R.id.retrofit) {
             Intent intent = new Intent(MainActivity.this, RetrofitWithRxActivity1.class);
+            startActivity(intent);
+        }else if (view.getId() == R.id.rxOpearotrs) {
+            Intent intent = new Intent(MainActivity.this, OperatorsActivity.class);
             startActivity(intent);
         }
     }

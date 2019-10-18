@@ -1,13 +1,12 @@
 package com.firozanwar.rxjavabyfiroz;
 
+import android.app.ProgressDialog;
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.app.ProgressDialog;
-import android.os.Bundle;
-
-import rx.Scheduler;
 import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
@@ -48,9 +47,9 @@ public class RetrofitWithRxActivity1 extends AppCompatActivity {
                 .observeOn(AndroidSchedulers.mainThread())
                 .doOnSubscribe(() -> progress.show())
                 .doOnCompleted(() -> progress.dismiss())
-                .subscribe(posts ->{
-                        adapter.setData(posts);
-                },err -> {
+                .subscribe(posts -> {
+                    adapter.setData(posts);
+                }, err -> {
                     err.printStackTrace();                               //printing stack trace in case of err
                     progress.dismiss();
                 });

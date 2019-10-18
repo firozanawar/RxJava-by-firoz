@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.firozanwar.rxjavabyfiroz">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.main.SplashActivity"></activity>
+
+        <activity android:name=".view.main.SplashActivity" />
         <activity android:name=".base.BaseActivity" />
         <activity android:name=".AsyncToRxActivity1" />
         <activity android:name=".TimerActivity" />
@@ -23,6 +22,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ravitamada.Example1Activity" />
+        <activity android:name=".ravitamada.Example2Activity" />
+        <activity android:name=".ravitamada.Example3Activity" />
+        <activity android:name=".ravitamada.Example4Activity" />
+        <activity android:name=".ravitamada.OperatorsActivity" />
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
