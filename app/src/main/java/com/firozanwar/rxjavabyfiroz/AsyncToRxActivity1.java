@@ -8,7 +8,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import rx.Observable;
-import rx.android.schedulers.AndroidSchedulers;
+//import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
 public class AsyncToRxActivity1 extends AppCompatActivity {
@@ -24,17 +24,17 @@ public class AsyncToRxActivity1 extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar);
         textView = findViewById(R.id.textView);
 
-        startAsyncTask("Firoz Anwar");
+//        startAsyncTask("Firoz Anwar");
     }
 
-    private void startAsyncTask(String input) {
-        Observable.just(input)
-                .map(this::doInBackground)
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .doOnSubscribe(this::onPreExecute)
-                .subscribe(this::onPostExecute);
-    }
+//    private void startAsyncTask(String input) {
+//        Observable.just(input)
+//                .map(this::doInBackground)
+//                .subscribeOn(Schedulers.io())
+//                .observeOn(AndroidSchedulers.mainThread())
+//                .doOnSubscribe(this::onPreExecute)
+//                .subscribe(this::onPostExecute);
+//    }
 
     private void onPreExecute() {
         progressBar.setVisibility(View.VISIBLE);

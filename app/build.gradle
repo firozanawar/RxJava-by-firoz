@@ -57,8 +57,8 @@ dependencies {
     annotationProcessor "com.jakewharton:butterknife-compiler:$butterKnifeVersion"
 
     //RxJava
-    implementation 'io.reactivex:rxandroid:1.2.1'
-    implementation 'io.reactivex:rxjava:1.1.6'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.13'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
 
     implementation "io.reactivex.rxjava2:rxjava:2.2.7"
     implementation "io.reactivex.rxjava2:rxandroid:2.1.1"
@@ -75,4 +75,6 @@ dependencies {
 
     //cardView
     implementation "androidx.cardview:cardview:1.0.0"
+    // FastAndroidNetworking Dependency
+//    implementation 'com.amitshekhar.android:rx2-android-networking:1.0.2'
 }

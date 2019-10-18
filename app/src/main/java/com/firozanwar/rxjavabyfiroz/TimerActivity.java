@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 import rx.Observable;
 import rx.Subscription;
-import rx.android.schedulers.AndroidSchedulers;
+//import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
 import rx.schedulers.Schedulers;
 
@@ -23,20 +23,20 @@ public class TimerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timer);
         timer = findViewById(R.id.timer);
-        startTimerTask();
+//        startTimerTask();
     }
 
-    private void startTimerTask() {
-        subscription = Observable.interval(3000, 3000, TimeUnit.MILLISECONDS)
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Action1<Long>() {
-                    @Override
-                    public void call(Long aLong) {
-                        timer.setText("Timer Called : " + aLong);
-                    }
-                });
-    }
+//    private void startTimerTask() {
+//        subscription = Observable.interval(3000, 3000, TimeUnit.MILLISECONDS)
+//                .subscribeOn(Schedulers.io())
+//                .observeOn(AndroidSchedulers.mainThread())
+//                .subscribe(new Action1<Long>() {
+//                    @Override
+//                    public void call(Long aLong) {
+//                        timer.setText("Timer Called : " + aLong);
+//                    }
+//                });
+//    }
 
     @Override
     protected void onDestroy() {

@@ -6,34 +6,54 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import com.firozanwar.rxjavabyfiroz.ravitamada.OperatorsActivity;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity{
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        findViewById(R.id.async).setOnClickListener(this::onClick);
-        findViewById(R.id.timer).setOnClickListener(this::onClick);
-        findViewById(R.id.retrofit).setOnClickListener(this::onClick);
-        findViewById(R.id.rxOpearotrs).setOnClickListener(this::onClick);
     }
 
-    @Override
-    public void onClick(View view) {
-        if (view.getId() == R.id.async) {
-            Intent intent = new Intent(MainActivity.this, AsyncToRxActivity1.class);
-            startActivity(intent);
-        } else if (view.getId() == R.id.timer) {
-            Intent intent = new Intent(MainActivity.this, TimerActivity.class);
-            startActivity(intent);
-        } else if (view.getId() == R.id.retrofit) {
-            Intent intent = new Intent(MainActivity.this, RetrofitWithRxActivity1.class);
-            startActivity(intent);
-        }else if (view.getId() == R.id.rxOpearotrs) {
-            Intent intent = new Intent(MainActivity.this, OperatorsActivity.class);
-            startActivity(intent);
-        }
+    public void RxOperators(View view) {
+        startActivity(new Intent(MainActivity.this, com.firozanwar.rxjavabyfiroz.OperatorsActivity.class));
+    }
+
+    public void startOperatorsActivity(View view) {
+        startActivity(new Intent(MainActivity.this, OperatorsActivity.class));
+    }
+
+    public void startNetworkingActivity(View view) {
+//        startActivity(new Intent(MainActivity.this, NetworkingActivity.class));
+    }
+
+    public void startCacheActivity(View view) {
+//        startActivity(new Intent(MainActivity.this, CacheExampleActivity.class));
+    }
+
+    public void startRxBusActivity(View view) {
+//        ((MyApplication) getApplication()).sendAutoEvent();
+//        startActivity(new Intent(MainActivity.this, RxBusActivity.class));
+    }
+
+    public void startPaginationActivity(View view) {
+//        startActivity(new Intent(MainActivity.this, PaginationActivity.class));
+    }
+
+    public void startComposeOperator(View view) {
+//        startActivity(new Intent(MainActivity.this, ComposeOperatorExampleActivity.class));
+    }
+
+    public void startSearchActivity(View view) {
+//        startActivity(new Intent(MainActivity.this, SearchActivity.class));
+    }
+
+    public void RxBasicOperators(View view) {
+        startActivity(new Intent(MainActivity.this, OperatorsActivity.class));
     }
 }
+
+
