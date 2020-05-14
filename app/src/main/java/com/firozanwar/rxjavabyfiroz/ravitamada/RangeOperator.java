@@ -13,7 +13,7 @@ public class RangeOperator {
 
     public void run() {
 
-        Observable.range(1,20)
+        Observable.range(1, 20)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new DisposableObserver<Integer>() {

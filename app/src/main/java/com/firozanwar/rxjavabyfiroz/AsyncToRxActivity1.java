@@ -7,9 +7,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import rx.Observable;
 //import rx.android.schedulers.AndroidSchedulers;
-import rx.schedulers.Schedulers;
 
 public class AsyncToRxActivity1 extends AppCompatActivity {
 

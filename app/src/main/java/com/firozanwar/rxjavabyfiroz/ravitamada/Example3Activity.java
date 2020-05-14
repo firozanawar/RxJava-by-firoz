@@ -31,17 +31,17 @@ public class Example3Activity extends AppCompatActivity {
 
         DisposableObserver<String> animalsObserverAllCaps = getAnimalsAllCapsObserver();
 
-                compositeDisposable.add(
-                        animalsObservable
-                                .subscribeOn(Schedulers.io())
-                                .observeOn(AndroidSchedulers.mainThread())
-                                .filter(new Predicate<String>() {
-                                    @Override
-                                    public boolean test(String s) throws Exception {
-                                        return s.toLowerCase().startsWith("b");
-                                    }
-                                })
-                                .subscribeWith(animalsObserver));
+        compositeDisposable.add(
+                animalsObservable
+                        .subscribeOn(Schedulers.io())
+                        .observeOn(AndroidSchedulers.mainThread())
+                        .filter(new Predicate<String>() {
+                            @Override
+                            public boolean test(String s) throws Exception {
+                                return s.toLowerCase().startsWith("b");
+                            }
+                        })
+                        .subscribeWith(animalsObserver));
 
         compositeDisposable.add(
                 animalsObservable

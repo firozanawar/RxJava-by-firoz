@@ -8,7 +8,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
 import com.firozanwar.rxjavabyfiroz.R;
 import com.firozanwar.rxjavabyfiroz.model.Car;
 import com.firozanwar.rxjavabyfiroz.utils.AppConstant;

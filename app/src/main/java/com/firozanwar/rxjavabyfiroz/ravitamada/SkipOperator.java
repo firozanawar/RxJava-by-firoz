@@ -13,7 +13,7 @@ public class SkipOperator {
 
     public void run() {
 
-        Observable.range(1,10)
+        Observable.range(1, 10)
                 .skip(4)
                 .skipLast(4)
                 .subscribeOn(Schedulers.io())

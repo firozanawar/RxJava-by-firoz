@@ -1,13 +1,12 @@
 package com.firozanwar.rxjavabyfiroz.utils;
 
-import android.util.Log;
-
-//import com.androidnetworking.error.ANError;
 import com.firozanwar.rxjavabyfiroz.model.ApiUser;
 import com.firozanwar.rxjavabyfiroz.model.User;
 
 import java.util.ArrayList;
 import java.util.List;
+
+//import com.androidnetworking.error.ANError;
 
 /**
  * Created by amitshekhar on 27/08/16.
@@ -77,7 +76,7 @@ public class Utils {
     }
 
     public static List<ApiUser> convertApiUserListToApiUserList(List<ApiUser> apiUserList) {
-      return apiUserList;
+        return apiUserList;
     }
 
 

@@ -13,7 +13,7 @@ public class RepeatOperator {
 
     public void run() {
 
-        Observable.range(1,4)
+        Observable.range(1, 4)
                 .repeat(3)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())

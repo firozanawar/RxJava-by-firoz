@@ -47,10 +47,10 @@ public class ThrottleLastExampleActivity extends AppCompatActivity {
     }
 
     /*
-    * Using throttleLast() -> emit the most recent items emitted by an Observable within
-    * periodic time intervals, so here it will emit 2, 6 and 7 as we have simulated it to be the
-    * last the element in the interval of 500 millis
-    */
+     * Using throttleLast() -> emit the most recent items emitted by an Observable within
+     * periodic time intervals, so here it will emit 2, 6 and 7 as we have simulated it to be the
+     * last the element in the interval of 500 millis
+     */
     private void doSomeWork() {
         getObservable()
                 .throttleLast(500, TimeUnit.MILLISECONDS)

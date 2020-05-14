@@ -13,7 +13,7 @@ public class TakeOperator {
 
     public void run() {
 
-        Observable.range(1,10)
+        Observable.range(1, 10)
                 .take(4)
                 //.takeLast(4)
                 .subscribeOn(Schedulers.io())

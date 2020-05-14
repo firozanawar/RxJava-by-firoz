@@ -42,8 +42,8 @@ public class SkipExampleActivity extends AppCompatActivity {
     }
 
     /* Using skip operator, it will not emit
-    * the first 2 values.
-    */
+     * the first 2 values.
+     */
     private void doSomeWork() {
         getObservable()
                 // Run on a background thread

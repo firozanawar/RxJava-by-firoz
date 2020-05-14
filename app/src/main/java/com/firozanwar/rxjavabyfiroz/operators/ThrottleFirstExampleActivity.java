@@ -48,10 +48,10 @@ public class ThrottleFirstExampleActivity extends AppCompatActivity {
     }
 
     /*
-    * Using throttleFirst() -> if the source Observable has emitted no items since
-    * the last time it was sampled, the Observable that results from this operator
-    * will emit no item for that sampling period.
-    */
+     * Using throttleFirst() -> if the source Observable has emitted no items since
+     * the last time it was sampled, the Observable that results from this operator
+     * will emit no item for that sampling period.
+     */
     private void doSomeWork() {
         getObservable()
                 .throttleFirst(500, TimeUnit.MILLISECONDS)

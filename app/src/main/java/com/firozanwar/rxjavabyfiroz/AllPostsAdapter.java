@@ -15,7 +15,7 @@ public class AllPostsAdapter extends RecyclerView.Adapter<AllPostsAdapter.MyView
 
     private List<Post> posts = new ArrayList<>();
 
-    public void setData(List<Post> posts){
+    public void setData(List<Post> posts) {
         this.posts = posts;
         notifyDataSetChanged();
     }
@@ -23,7 +23,7 @@ public class AllPostsAdapter extends RecyclerView.Adapter<AllPostsAdapter.MyView
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View iteamView = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_posts,parent,false);
+        View iteamView = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_posts, parent, false);
         return new MyViewHolder(iteamView);
     }
 
@@ -40,7 +40,7 @@ public class AllPostsAdapter extends RecyclerView.Adapter<AllPostsAdapter.MyView
         return posts.size();
     }
 
-    class MyViewHolder extends RecyclerView.ViewHolder{
+    class MyViewHolder extends RecyclerView.ViewHolder {
 
         //declare variables here
         private TextView title;

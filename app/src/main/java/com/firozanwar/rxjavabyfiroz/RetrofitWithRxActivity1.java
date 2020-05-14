@@ -8,8 +8,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import rx.Subscription;
-//import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
+
+//import rx.android.schedulers.AndroidSchedulers;
 
 public class RetrofitWithRxActivity1 extends AppCompatActivity {
 

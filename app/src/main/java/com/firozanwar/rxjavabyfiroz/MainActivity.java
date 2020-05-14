@@ -6,10 +6,9 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
 import com.firozanwar.rxjavabyfiroz.ravitamada.OperatorsActivity;
 
-public class MainActivity extends AppCompatActivity{
+public class MainActivity extends AppCompatActivity {
 
 
     @Override
@@ -23,7 +22,8 @@ public class MainActivity extends AppCompatActivity{
     }
 
     public void startOperatorsActivity(View view) {
-        startActivity(new Intent(MainActivity.this, OperatorsActivity.class));
+        //startActivity(new Intent(MainActivity.this, OperatorsActivity.class));
+        startActivity(new Intent(MainActivity.this, com.firozanwar.rxjavabyfiroz.OperatorsActivity.class));
     }
 
     public void startNetworkingActivity(View view) {

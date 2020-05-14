@@ -17,6 +17,7 @@ import io.reactivex.schedulers.Schedulers;
 
 public class MapOperators {
     public static final String TAG = MapOperators.class.getSimpleName();
+
     public void run() {
         // Map operator
         /*getUserObservale()
@@ -57,7 +58,7 @@ public class MapOperators {
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .flatMap(new Function<User, Observable<User>>() {
-               //.concatMap(new Function<User, Observable<User>>() {
+                    //.concatMap(new Function<User, Observable<User>>() {
 
                     @Override
                     public Observable<User> apply(User user) throws Exception {
@@ -87,7 +88,9 @@ public class MapOperators {
                         Log.e(TAG, "All users emitted!");
                     }
                 });
-    };
+    }
+
+    ;
 
 
     private Observable<User> getUserObservale() {

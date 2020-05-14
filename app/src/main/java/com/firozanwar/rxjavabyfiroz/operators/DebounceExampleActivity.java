@@ -47,9 +47,9 @@ public class DebounceExampleActivity extends AppCompatActivity {
     }
 
     /*
-    * Using debounce() -> only emit an item from an Observable if a particular time-span has
-    * passed without it emitting another item, so it will emit 2, 4, 5 as we have simulated it.
-    */
+     * Using debounce() -> only emit an item from an Observable if a particular time-span has
+     * passed without it emitting another item, so it will emit 2, 4, 5 as we have simulated it.
+     */
     private void doSomeWork() {
         getObservable()
                 .debounce(500, TimeUnit.MILLISECONDS)

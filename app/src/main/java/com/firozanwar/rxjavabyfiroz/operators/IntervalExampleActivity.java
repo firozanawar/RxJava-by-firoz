@@ -62,7 +62,7 @@ public class IntervalExampleActivity extends AppCompatActivity {
     }
 
     void resume() {
-        Log.d(TAG,"resumed");
+        Log.d(TAG, "resumed");
         disposable = Observable.interval(5, TimeUnit.SECONDS, Schedulers.io())
                 .map(new Function<Long, Long>() {
                     @Override
@@ -80,7 +80,7 @@ public class IntervalExampleActivity extends AppCompatActivity {
 
     void stop() {
         if (disposable != null && !disposable.isDisposed()) {
-            Log.d(TAG,"stopped");
+            Log.d(TAG, "stopped");
             disposable.dispose();
         }
     }

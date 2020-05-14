@@ -2,17 +2,12 @@ package com.firozanwar.rxjavabyfiroz;
 
 import android.os.Bundle;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.concurrent.TimeUnit;
-
-import rx.Observable;
 import rx.Subscription;
+
 //import rx.android.schedulers.AndroidSchedulers;
-import rx.functions.Action1;
-import rx.schedulers.Schedulers;
 
 public class TimerActivity extends AppCompatActivity {
     private Subscription subscription;

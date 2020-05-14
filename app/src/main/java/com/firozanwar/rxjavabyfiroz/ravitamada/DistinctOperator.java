@@ -13,7 +13,7 @@ public class DistinctOperator {
 
     public void run() {
 
-        Observable.just(10,10, 15, 20, 100, 200, 100, 300, 20, 100)
+        Observable.just(10, 10, 15, 20, 100, 200, 100, 300, 20, 100)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .distinct()
