@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.firozanwar.rxjavabyfiroz.R;
 
 
-public class OperatorsActivity extends AppCompatActivity {
+public class OperatorsRaviActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

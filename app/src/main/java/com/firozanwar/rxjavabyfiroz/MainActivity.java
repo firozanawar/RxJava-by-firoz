@@ -6,7 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.firozanwar.rxjavabyfiroz.ravitamada.OperatorsActivity;
+import com.firozanwar.rxjavabyfiroz.ravitamada.OperatorsRaviActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,11 +18,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void RxOperators(View view) {
-        startActivity(new Intent(MainActivity.this, com.firozanwar.rxjavabyfiroz.OperatorsActivity.class));
+        startActivity(new Intent(MainActivity.this, OperatorsRaviActivity.class));
     }
 
     public void startOperatorsActivity(View view) {
-        //startActivity(new Intent(MainActivity.this, OperatorsActivity.class));
+
         startActivity(new Intent(MainActivity.this, com.firozanwar.rxjavabyfiroz.OperatorsActivity.class));
     }
 
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void RxBasicOperators(View view) {
-        startActivity(new Intent(MainActivity.this, OperatorsActivity.class));
+        startActivity(new Intent(MainActivity.this, OperatorsRaviActivity.class));
     }
 }
 

@@ -68,7 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="RxOperators"
-            android:text="Rx Operators" />
+            android:text="Rx Operators Theory by Ravi Tamada" />
 
     </LinearLayout>
 </ScrollView>

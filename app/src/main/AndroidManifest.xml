@@ -35,7 +35,7 @@
         <activity android:name=".ravitamada.Example2Activity" />
         <activity android:name=".ravitamada.Example3Activity" />
         <activity android:name=".ravitamada.Example4Activity" />
-        <activity android:name=".ravitamada.OperatorsActivity" />
+        <activity android:name=".ravitamada.OperatorsRaviActivity" />
         <activity
             android:name=".operators.DisposableExampleActivity"
             android:label="@string/disposable" />
